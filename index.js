@@ -21,7 +21,7 @@ let run = function() {
   function addImg(e) {
     let objects = canvas.getObjects();
     for (let i in objects) {
-      objects[i].remove();
+      canvas.remove(objects[i]);
     }
     let reader = new FileReader();
     reader.onload = function(event) {
